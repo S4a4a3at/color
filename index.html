@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container" id="mainContainer">
+        <h1 class="main-heading">Color Picker</h1>
+        <div class="button-container">
+            <button class="first f" id="f" onclick="">#e0e0e0</button>
+            <button class="second f" id="s">#6fcf97</button>
+            <button class="third f" id="t">#56ccf2</button>
+            <button class="fourth f" id="ff">#bb6bd9</button>
+        </div>
+        <div class="color-heading-container">
+            <h1 class="bc-heading">Background Color : <span class="span" id="span">#fffff</span></h1>
+        </div>
+        <p class="para">Try clicking on of the colors above to change the background color of this page!</p>
+    </div>
+
+
+    <script>
+        const mainContainer = document.getElementById("mainContainer")
+        const f = document.getElementById("f");
+        const s = document.getElementById("s");
+        const t = document.getElementById("t");
+        const ff = document.getElementById("ff");
+        const span = document.getElementById("span");
+        f.addEventListener("click" , () => {
+            mainContainer.style.backgroundColor = "#e0e0e0";
+            span.textContent = "#e0e0e0";
+        })
+        s.addEventListener("click" , () => {
+            mainContainer.style.backgroundColor = "#6fcf97";
+            span.textContent = "#6fcf97";
+        })
+        t.addEventListener("click" , () => {
+            mainContainer.style.backgroundColor = "#56ccf2";
+            span.textContent = "#56ccf2";
+        })
+        ff.addEventListener("click" , () => {
+            mainContainer.style.backgroundColor = "#bb6bd9";
+            span.textContent = "#bb6bd9";
+        })
+    </script>
+</body>
+</html>
